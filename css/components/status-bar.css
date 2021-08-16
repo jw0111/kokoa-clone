@@ -1,11 +1,11 @@
 .status-bar {
-  /* position: fixed;
-  box-sizing: border-box; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 5px 3px;
   width: 100%;
+  position: fixed;
+  box-sizing: border-box;
 }
 .status-bar__column {
   width: 33%;
