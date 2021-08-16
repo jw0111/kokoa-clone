@@ -34,6 +34,14 @@
   align-items: center;
   animation: fadeIn 0.8s linear;
 }
+@keyframes flipTimestamp {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
 .chat__timestamp {
   color: white;
   background-color: #92a4b2;
@@ -41,6 +49,7 @@
   font-size: 14px;
   border-radius: 25px;
   margin-bottom: 25px;
+  animation: flipTimestamp 1s ease-in-out;
 }
 
 .message-row {
@@ -163,4 +172,10 @@
 
 .reply:focus-within {
   transform: translateY(80px);
+}
+
+.fa-thumbtack {
+  color: rgba(0, 0, 0, 0.2);
+  margin-left: 3px;
+  font-size: 13px;
 }
